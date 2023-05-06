@@ -4,17 +4,14 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
 
-public class DragAndDrop : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDragHandler, IDropHandler {
+public class DragAndDrop2 : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDragHandler {
 
 	private RectTransform rectTransform;
 	private Image image;
-	private CanvasGroup canvasGroup;
-
-	[SerializeField] private Canvas Canvas;
 	#region IDragHandler implementation
 	public void OnDrag (PointerEventData eventData)
 	{
-		rectTransform.anchoredPosition += eventData.delta/ Canvas.scaleFactor;
+		rectTransform.anchoredPosition += eventData.delta;
 
 	}
 	#endregion
@@ -23,8 +20,7 @@ public class DragAndDrop : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndD
 
 	public void OnBeginDrag (PointerEventData eventData)
 	{
-		image.color = new Color32 (255, 255, 255, 170);
-		canvasGroup.blocksRaycasts = false;
+		image.color = new Color32 (255, 255, 255, 10);
 	}
 
 	#endregion
@@ -33,26 +29,15 @@ public class DragAndDrop : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndD
 
 	public void OnEndDrag (PointerEventData eventData)
 	{
-		image.color = new Color32 (255, 255, 255, 255);
-		canvasGroup.blocksRaycasts = true;
+		image.color = new Color32 (255, 255, 255, 0);
 	}
-
-	#region IDropHandler implementation
-
-	public void OnDrop (PointerEventData eventData)
-	{
-		throw new System.NotImplementedException ();
-	}
-
-	#endregion
 
 	#endregion
 	void Start () {
 		rectTransform = GetComponent<RectTransform>();
 		image = GetComponent<Image> ();
-		canvasGroup = GetComponent<CanvasGroup> ();
 	}
-	
+
 
 
 }
