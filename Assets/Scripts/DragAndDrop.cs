@@ -1,0 +1,43 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.EventSystems;
+
+public class DragAndDrop : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDragHandler {
+
+	private RectTransform rectTransform;
+	private Image image;
+	#region IDragHandler implementation
+	public void OnDrag (PointerEventData eventData)
+	{
+		//rectTransform.anchoredPosition += eventData.delta;
+		transform.position = Input.mousePosition;
+	}
+	#endregion
+
+	#region IBeginDragHandler implementation
+
+	public void OnBeginDrag (PointerEventData eventData)
+	{
+		image.color = new Color32 (255, 255, 255, 170);
+	}
+
+	#endregion
+
+	#region IEndDragHandler implementation
+
+	public void OnEndDrag (PointerEventData eventData)
+	{
+		image.color = new Color32 (255, 255, 255, 255);
+	}
+
+	#endregion
+	void Start () {
+		rectTransform = GetComponent<RectTransform>();
+		image = GetComponent<Image> ();
+	}
+	
+
+
+}
