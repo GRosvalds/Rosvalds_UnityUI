@@ -8,13 +8,17 @@ public class DragAndDrop : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndD
 
 	private RectTransform rectTransform;
 	private Image image;
-	private CanvasGroup canvasGroup;
+
+private CanvasGroup canvasGroup;
+
+	static public GameObject itemBeingDragged;
+	static public ItemInfo tmpInfo;
 
 	[SerializeField] private Canvas Canvas;
 	#region IDragHandler implementation
 	public void OnDrag (PointerEventData eventData)
 	{
-		rectTransform.anchoredPosition += eventData.delta/ Canvas.scaleFactor;
+		itemBeingDragged.transform.position = eventData.position;
 
 	}
 	#endregion
@@ -23,8 +27,21 @@ public class DragAndDrop : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndD
 
 	public void OnBeginDrag (PointerEventData eventData)
 	{
-		image.color = new Color32 (255, 255, 255, 170);
-		canvasGroup.blocksRaycasts = false;
+		GameObject duplicate = Instantiate (gameObject);
+		itemBeingDragged = duplicate;
+		RectTransform tmpRT = gameObject.GetComponent<RectTransform> ();
+
+		RectTransform rt = itemBeingDragged.GetComponent<RectTransform> ();
+		rt.sizeDelta = new Vector2 (tmpRT.sizeDelta.x, tmpRT.sizeDelta.y);
+
+		GetComponent<CanvasGroup> ().blocksRaycasts = false;
+		tmpInfo = GetComponent<ItemInfo> ();
+		Transform canvas = GameObject.FindGameObjectWithTag ("UI Canvas").transform;
+		itemBeingDragged.transform.SetParent (canvas);
+		itemBeingDragged.GetComponent<CanvasGroup> ().blocksRaycasts = false;
+
+		
+
 	}
 
 	#endregion
@@ -33,8 +50,11 @@ public class DragAndDrop : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndD
 
 	public void OnEndDrag (PointerEventData eventData)
 	{
-		image.color = new Color32 (255, 255, 255, 255);
-		canvasGroup.blocksRaycasts = true;
+		GetComponent<CanvasGroup> ().blocksRaycasts = true;
+		//Destroy (DragAndDrop.itemBeingDragged);
+		//DragAndDrop.itemBeingDragged = null;
+
+
 	}
 
 	#region IDropHandler implementation
@@ -47,12 +67,12 @@ public class DragAndDrop : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndD
 	#endregion
 
 	#endregion
-	void Start () {
+	/*void Start () {
 		rectTransform = GetComponent<RectTransform>();
 		image = GetComponent<Image> ();
 		canvasGroup = GetComponent<CanvasGroup> ();
 	}
-	
+	*/
 
 
 }

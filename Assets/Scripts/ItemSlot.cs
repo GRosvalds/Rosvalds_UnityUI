@@ -8,11 +8,14 @@ public class ItemSlot : MonoBehaviour, IDropHandler {
 
 	public void OnDrop (PointerEventData eventData)
 	{
-		if(eventData.pointerDrag != null) {
-			eventData.pointerDrag.GetComponent<RectTransform> ().anchoredPosition = GetComponent<RectTransform> ().anchoredPosition;
+		ItemInfo myInfo = gameObject.GetComponent<ItemInfo> ();
+		ItemInfo dropInfo = DragAndDrop.itemBeingDragged.GetComponent<ItemInfo> ();
+
+
+			DragAndDrop.itemBeingDragged.GetComponent<RectTransform> ().anchoredPosition = DragAndDrop.itemBeingDragged.GetComponent<RectTransform> ().anchoredPosition;
+	
+		
 	}
 
-	
-		}
 	#endregion
-}
+	}
