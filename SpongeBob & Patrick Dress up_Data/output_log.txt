@@ -1,0 +1,100 @@
+Initialize engine version: 5.5.6f1 (3fb31a95adee)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: Intel(R) UHD Graphics 630 (ID=0x9bc8)
+    Vendor:   Intel
+    VRAM:     2111 MB
+    Driver:   30.0.101.1273
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\2PT-2\Desktop\New folder (2)\Rosvalds_UnityUI\SpongeBob & Patrick Dress up_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\2PT-2\Desktop\New folder (2)\Rosvalds_UnityUI\SpongeBob & Patrick Dress up_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\2PT-2\Desktop\New folder (2)\Rosvalds_UnityUI\SpongeBob & Patrick Dress up_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\2PT-2\Desktop\New folder (2)\Rosvalds_UnityUI\SpongeBob & Patrick Dress up_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\2PT-2\Desktop\New folder (2)\Rosvalds_UnityUI\SpongeBob & Patrick Dress up_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\2PT-2\Desktop\New folder (2)\Rosvalds_UnityUI\SpongeBob & Patrick Dress up_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\2PT-2\Desktop\New folder (2)\Rosvalds_UnityUI\SpongeBob & Patrick Dress up_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\2PT-2\Desktop\New folder (2)\Rosvalds_UnityUI\SpongeBob & Patrick Dress up_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: C:\Users\2PT-2\Desktop\New folder (2)\Rosvalds_UnityUI\SpongeBob & Patrick Dress up_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll (this message is harmless)
+Loading C:\Users\2PT-2\Desktop\New folder (2)\Rosvalds_UnityUI\SpongeBob & Patrick Dress up_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll into Unity Child Domain
+Platform assembly: C:\Users\2PT-2\Desktop\New folder (2)\Rosvalds_UnityUI\SpongeBob & Patrick Dress up_Data\Managed\UnityEngine.Analytics.dll (this message is harmless)
+Loading C:\Users\2PT-2\Desktop\New folder (2)\Rosvalds_UnityUI\SpongeBob & Patrick Dress up_Data\Managed\UnityEngine.Analytics.dll into Unity Child Domain
+- Completed reload, in  0.295 seconds
+Platform assembly: C:\Users\2PT-2\Desktop\New folder (2)\Rosvalds_UnityUI\SpongeBob & Patrick Dress up_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\Users\2PT-2\Desktop\New folder (2)\Rosvalds_UnityUI\SpongeBob & Patrick Dress up_Data\Managed\System.dll (this message is harmless)
+desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
+<RI> Initializing input.
+XInput1_3.dll not found. Trying XInput9_1_0.dll instead...
+<RI> Input initialized.
+<RI> Initialized touch support.
+UnloadTime: 4.065100 ms
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 4.483200 ms
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 307.
+Total: 0.161900 ms (FindLiveObjects: 0.014000 ms CreateObjectMapping: 0.011700 ms MarkObjects: 0.127900 ms  DeleteObjects: 0.008000 ms)
+
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.462900 ms
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 676.
+Total: 0.345300 ms (FindLiveObjects: 0.023700 ms CreateObjectMapping: 0.016200 ms MarkObjects: 0.297000 ms  DeleteObjects: 0.008100 ms)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 3.052100 ms
+
+Unloading 35 unused Assets to reduce memory usage. Loaded Objects now: 310.
+Total: 0.238300 ms (FindLiveObjects: 0.017500 ms CreateObjectMapping: 0.021200 ms MarkObjects: 0.177200 ms  DeleteObjects: 0.021900 ms)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.451600 ms
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 724.
+Total: 0.966400 ms (FindLiveObjects: 0.055000 ms CreateObjectMapping: 0.048900 ms MarkObjects: 0.843300 ms  DeleteObjects: 0.018300 ms)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.896800 ms
+
+Unloading 45 unused Assets to reduce memory usage. Loaded Objects now: 310.
+Total: 0.355200 ms (FindLiveObjects: 0.024100 ms CreateObjectMapping: 0.024600 ms MarkObjects: 0.261700 ms  DeleteObjects: 0.044000 ms)
+
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.413900 ms
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 299.
+Total: 0.258200 ms (FindLiveObjects: 0.018600 ms CreateObjectMapping: 0.018700 ms MarkObjects: 0.207400 ms  DeleteObjects: 0.012900 ms)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.325000 ms
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 307.
+Total: 0.249900 ms (FindLiveObjects: 0.017100 ms CreateObjectMapping: 0.017100 ms MarkObjects: 0.204100 ms  DeleteObjects: 0.011100 ms)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.385400 ms
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 724.
+Total: 0.636100 ms (FindLiveObjects: 0.035400 ms CreateObjectMapping: 0.040100 ms MarkObjects: 0.548400 ms  DeleteObjects: 0.011700 ms)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.703900 ms
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 727.
+Total: 0.726000 ms (FindLiveObjects: 0.056300 ms CreateObjectMapping: 0.027100 ms MarkObjects: 0.635300 ms  DeleteObjects: 0.006100 ms)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.630700 ms
+
+Unloading 45 unused Assets to reduce memory usage. Loaded Objects now: 310.
+Total: 0.209500 ms (FindLiveObjects: 0.023300 ms CreateObjectMapping: 0.013900 ms MarkObjects: 0.151100 ms  DeleteObjects: 0.020700 ms)
+
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.335000 ms
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 299.
+Total: 0.199600 ms (FindLiveObjects: 0.014500 ms CreateObjectMapping: 0.013500 ms MarkObjects: 0.156400 ms  DeleteObjects: 0.014900 ms)
+
+Setting up 3 worker threads for Enlighten.
+  Thread -> id: 3b10 -> priority: 1 
+  Thread -> id: 5270 -> priority: 1 
+  Thread -> id: 65e4 -> priority: 1 
