@@ -6,7 +6,21 @@ using UnityEngine.UI;
 public class Images : MonoBehaviour {
 	
 	public GameObject kurRadit;
-	public Sprite[] koRadit;
+    public GameObject bobcepure;
+    public GameObject bobCepure1;
+    public GameObject bobBikses;
+    public GameObject bobbikses1;
+    public GameObject bobKurpes;
+    public GameObject bobKurpes1;
+    public GameObject bobKrekls;
+    public GameObject BobKrekls1;
+    public GameObject Lapstina;
+    public GameObject Lapstina1;
+    public GameObject Patty;
+    public GameObject Patty1;
+    
+
+    public Sprite[] koRadit;
 	public GameObject slaideris1;
 	public GameObject slaideris2;
 
@@ -29,7 +43,32 @@ public class Images : MonoBehaviour {
 		float pasreizejaVertiba2 = slaideris2.GetComponent<Slider> ().value;
 		kurRadit.transform.localScale = 
 			new Vector2 (1f*pasreizejaVertiba, 1f*pasreizejaVertiba2);
-	}
+        bobcepure.transform.localScale =
+            new Vector2(1f * pasreizejaVertiba, 1f * pasreizejaVertiba2);
+        bobCepure1.transform.localScale =
+            new Vector2(1f * pasreizejaVertiba, 1f * pasreizejaVertiba2);
+        bobBikses.transform.localScale =
+            new Vector2(1f * pasreizejaVertiba, 1f * pasreizejaVertiba2);
+        bobbikses1.transform.localScale =
+            new Vector2(1f * pasreizejaVertiba, 1f * pasreizejaVertiba2);
+        bobKurpes.transform.localScale =
+            new Vector2(1f * pasreizejaVertiba, 1f * pasreizejaVertiba2);
+        bobKurpes1.transform.localScale =
+            new Vector2(1f * pasreizejaVertiba, 1f * pasreizejaVertiba2);
+        bobKrekls.transform.localScale =
+            new Vector2(1f * pasreizejaVertiba, 1f * pasreizejaVertiba2);
+        BobKrekls1.transform.localScale =
+            new Vector2(1f * pasreizejaVertiba, 1f * pasreizejaVertiba2);
+        Lapstina.transform.localScale =
+            new Vector2(1f * pasreizejaVertiba, 1f * pasreizejaVertiba2);
+        Lapstina1.transform.localScale =
+            new Vector2(1f * pasreizejaVertiba, 1f * pasreizejaVertiba2);
+        Patty.transform.localScale =
+            new Vector2(1f * pasreizejaVertiba, 1f * pasreizejaVertiba2);
+        Patty1.transform.localScale =
+            new Vector2(1f * pasreizejaVertiba, 1f * pasreizejaVertiba2);
+
+    }
 
 
 }
