@@ -9,6 +9,7 @@ public class DragAndDrop : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndD
 	private RectTransform rectTransform;
 	private Image image;
 
+
 private CanvasGroup canvasGroup;
 
 	static public GameObject itemBeingDragged;
